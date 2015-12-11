@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:background="?android:attr/activatedBackgroundIndicator">
+
+    <CheckBox
+        android:id="@+id/chkFila"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"/>
+    
+    <ImageView
+        android:id="@+id/imgEscudo"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@id/chkFila"/>
+
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/imgEscudo"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblSubtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblTitulo"
+        android:layout_toRightOf="@id/imgEscudo"
+        android:layout_marginLeft="5dp"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+</RelativeLayout>
